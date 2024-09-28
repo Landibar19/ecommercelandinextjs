@@ -31,3 +31,52 @@
 .icon{
   margin-right: 8px;
 }
+
+/* styles/globals.css */
+.blob {
+  border-radius: 25% 60% 50% 60% / 60% 50% 50% 50%;
+}
+
+/* Custom styles for the slider dots */
+.custom-dots {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.custom-dots li {
+  list-style: none;
+  margin: 0 5px;
+}
+
+.custom-dots li button {
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+.custom-dots li button:before {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 5px;
+  background-color: gray; /* Default color */
+}
+
+.custom-dots li.slick-active button:before {
+  background-color: red; /* Active dot color */
+}
+
+.custom-dots li:nth-child(3n+1) button:before {
+  background-color: blue; /* Every third dot color */
+}
+
+.custom-dots li:nth-child(3n+2) button:before {
+  background-color: green; /* Every third dot color */
+}
+
+.custom-dots li:nth-child(3n) button:before {
+  background-color: yellow; /* Every third dot color */
+}
