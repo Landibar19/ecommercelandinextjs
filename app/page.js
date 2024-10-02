@@ -1,5 +1,7 @@
+'use client';
+import FeaturedProducts from "@/ecommerce/sections/FeaturedProducts";
 import { Promotional } from "@/sections/Promotional";
-import Image from "next/image";
+
 
 export default function Home() {
   return (
@@ -7,6 +9,7 @@ export default function Home() {
     
     <div>
     <Promotional />
+    <FeaturedProducts />
     </div>
     </div>
   );
