@@ -6,11 +6,11 @@ import chairImage from '../assets/Promotional/Shell-Shaped-Armchair-Pink-Velvet-
 
 export const Promotional = () => {
   return (
-    <div className='flex relative flex-col md:flex-row justify-center items-center w-full h-full md:h-full p-6 md:p-24' style={{ backgroundColor: 'rgb(242, 240, 248)' }}>
+    <div className='flex relative flex-col md:flex-row justify-center items-center w-full h-full md:h-full p-2 md:py-20' style={{ backgroundColor: 'rgb(242, 240, 248)' }}>
       <div className=' flex-2 sm:relative md:absolute flex justify-center items-center top-0 md:left-0 lg:left-5'>
         <Image src={image} alt='Promotional' width={238} height={340} className='pr-1' />
       </div>
-      <div className='flex-2 flex flex-col justify-center items-center md:items-start pt-10 md:pt-0 pl-4 md:pl-10'>
+      <div className=' flex flex-col justify-center items-center md:w-2/4 md:items-start pt-10 md:pt-0 pl-4 md:pl-16'>
         <p className='text-xs md:text-sm lg:text-base text-pink-600'>
           Best furniture for your castle...
         </p>

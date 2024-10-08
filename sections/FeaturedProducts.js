@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FeaturedProductsData } from '../data/FeaturedProductsData';
+import { FeaturedProductsData } from '../app/api/data/FeaturedProductsData';
 import Image from 'next/image';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
@@ -7,6 +7,7 @@ import 'slick-carousel/slick/slick-theme.css';
 
 const FeaturedProducts = () => {
   const [activeIndex, setActiveIndex] = useState(null);
+  const [hoveredDot, setHoveredDot] = useState(null);
 
   const settings = {
     dots: true,
@@ -19,7 +20,11 @@ const FeaturedProducts = () => {
       <ul className="custom-dots"> {dots.slice(0, 4)} </ul>
     ),
     customPaging: (i) => (
-      <div className="custom-dot w-5 h-1 bg-pink-600"></div>
+      <div
+        className={`custom-dot w-5 h-1 bg-pink-600 m-5 ${hoveredDot === i ? 'w-7 h-2' : ''}`}
+        onMouseEnter={() => setHoveredDot(i)}
+        onMouseLeave={() => setHoveredDot(null)}
+      ></div>
     ),
     responsive: [
       {
@@ -49,7 +54,7 @@ const FeaturedProducts = () => {
       {FeaturedProductsData && FeaturedProductsData.length > 0 ? (
         <Slider {...settings}>
           {FeaturedProductsData.map((product, index) => (
-            <div key={index} className="px-2">
+            <div key={index} className="px-2 py-5">
               <div
                 className={`border rounded-2xl shadow-lg max-w-xs mx-auto flex flex-col items-center transition-transform duration-300 ${
                   activeIndex === index ? 'border-4 border-blue-900 transform scale-105' : 'border'
@@ -58,8 +63,8 @@ const FeaturedProducts = () => {
                 onMouseEnter={() => setActiveIndex(index)}
                 onClick={() => setActiveIndex(index)}
               >
-                <Image src={product.image} alt={product.title} className="w-full h-48 object-contain" />
-                <div className='flex flex-col justify-center items-center text-justify'>
+                <Image src={product.image} alt={product.title} className="w-full h-48 object-contain p-3" />
+                <div className='flex flex-col justify-center items-left text-justify p-4'>
                   <h2 className="text-xl font-bold mt-2 text-pink-600 transition-transform duration-300 hover:scale-105">{product.title}</h2>
                   <p className="text-gray-600 transition-transform duration-300 hover:scale-105">Code: {product.code}</p>
                   <p className="text-gray-800 font-semibold transition-transform duration-300 hover:scale-105">Price: ${product.price}</p>

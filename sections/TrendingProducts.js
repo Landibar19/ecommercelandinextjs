@@ -1,11 +1,11 @@
 import React from 'react';
-import { TrendingProductData } from '@/data/TrendingProductData';
+import { TrendingProductData } from '../app/api/data/TrendingProductData';
 import Image from 'next/image';
 import '/app/globals.css';
 
 export const TrendingProducts = () => {
   return (
-    <div style={{backgroundColor: 'rgb(241, 240, 255)' }}>
+    <div style={{backgroundColor: 'rgb(241, 240, 255)', padding:4 }}>
       {TrendingProductData.map((product, index) => (
         <div key={index} className='flex justify-center items-center flex-row'>
           <div  className='blob' style={{backgroundColor:'rgb(245, 225, 252)'}}>
