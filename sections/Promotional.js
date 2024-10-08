@@ -6,11 +6,11 @@ import chairImage from '../assets/Promotional/Shell-Shaped-Armchair-Pink-Velvet-
 
 export const Promotional = () => {
   return (
-    <div className='flex flex-col md:flex-row justify-center items-center w-full h-full md:h-screen p-6 md:p-24' style={{ backgroundColor: 'rgb(242, 240, 248)' }}>
-      <div className=' flex justify-center items-center'>
-        <Image src={image} alt='Promotional' width={230} height={340} className='pr-1' />
+    <div className='flex relative flex-col md:flex-row justify-center items-center w-full h-full md:h-full p-6 md:p-24' style={{ backgroundColor: 'rgb(242, 240, 248)' }}>
+      <div className=' flex-2 sm:relative md:absolute flex justify-center items-center top-0 md:left-0 lg:left-5'>
+        <Image src={image} alt='Promotional' width={238} height={340} className='pr-1' />
       </div>
-      <div className='flex flex-col justify-center items-center md:items-start pt-10 md:pt-0 pl-4 md:pl-10'>
+      <div className='flex-2 flex flex-col justify-center items-center md:items-start pt-10 md:pt-0 pl-4 md:pl-10'>
         <p className='text-xs md:text-sm lg:text-base text-pink-600'>
           Best furniture for your castle...
         </p>
@@ -29,7 +29,7 @@ export const Promotional = () => {
         <div className=' blob absolute top-0 -right-5 md:-right-10 w-16 h-16 md:w-20 md:h-20 rounded-full bg-blue-500 flex justify-center items-center'>
           <p className='text-xs md:text-base text-white font-bold font-sans'>50% off</p>
         </div>
-        <Image src={chairImage} alt='Chair' width={320} height={450} className='min-w-40 min-h-60' />
+        <Image src={chairImage} alt='Chair' width={380} height={450} className='w-40 h-60 md:w-72 md:h-96' />
       </div>
     </div>
   );
