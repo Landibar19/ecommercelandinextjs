@@ -10,7 +10,7 @@ export const Promotional = () => {
       <div className=' flex justify-center items-center'>
         <Image src={image} alt='Promotional' width={230} height={340} className='pr-1' />
       </div>
-      <div className='flex-1 flex flex-col justify-center items-center md:items-start pt-10 md:pt-0 pl-4 md:pl-10'>
+      <div className='flex flex-col justify-center items-center md:items-start pt-10 md:pt-0 pl-4 md:pl-10'>
         <p className='text-xs md:text-sm lg:text-base text-pink-600'>
           Best furniture for your castle...
         </p>
@@ -25,11 +25,11 @@ export const Promotional = () => {
           Shop now
         </button>
       </div>
-      <div className=' flex justify-center items-center relative rounded-full w-48 h-48 md:w-72 md:h-72 mt-10 md:mt-0' style={{ backgroundColor: 'rgb(236, 210, 250)' }}>
+      <div className=' flex justify-center items-center relative rounded-full w-48 h-48 md:w-72 md:h-42  mt-10 md:mt-0' style={{ backgroundColor: 'rgb(236, 210, 250)' }}>
         <div className=' blob absolute top-0 -right-5 md:-right-10 w-16 h-16 md:w-20 md:h-20 rounded-full bg-blue-500 flex justify-center items-center'>
           <p className='text-xs md:text-base text-white font-bold font-sans'>50% off</p>
         </div>
-        <Image src={chairImage} alt='Chair' width={280} height={450} className='w-40 h-60 md:w-72 md:h-96' />
+        <Image src={chairImage} alt='Chair' width={320} height={450} className='min-w-40 min-h-60' />
       </div>
     </div>
   );

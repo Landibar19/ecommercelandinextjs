@@ -18,7 +18,7 @@ const FeaturedProducts = () => {
       <ul className="custom-dots"> {dots.slice(0, 4)} </ul>
     ),
     customPaging: (i) => (
-      <div className="custom-dot w-5 m-3 h-1 mx-1 bg-pink-600"></div>
+      <div className="custom-dot w-5 m-3 h-1 mx-1 bg-pink-600 transition-transform duration-300 hover:scale-150"></div>
     ),
     responsive: [
       {
@@ -58,7 +58,7 @@ const FeaturedProducts = () => {
                 onClick={() => setActiveIndex(index)}
               >
                 <Image src={product.image} alt={product.title} className="w-full h-48 object-contain" />
-                <div className='flex flex-col justify-center items-center text-justify'>
+                <div className='flex flex-col justify-center items-left text-justify'>
                   <h2 className="text-xl font-bold mt-2 text-pink-600 p-1 transition-transform duration-300 hover:scale-105">{product.title}</h2>
                   <p className="text-gray-600 p-1 transition-transform duration-300 hover:scale-105">Code: {product.code}</p>
                   <p className="text-gray-800 font-semibold p-1 transition-transform duration-300 hover:scale-105">Price: ${product.price}</p>
