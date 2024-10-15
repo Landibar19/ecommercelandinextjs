@@ -19,7 +19,7 @@ const FeaturedProducts = () => {
       <ul className="custom-dots"> {dots.slice(0, 4)} </ul>
     ),
     customPaging: (i) => (
-      <div className="custom-dot w-5 h-1 bg-pink-600"></div>
+      <div className="custom-dot w-5 h-1 bg-pink-600 m-8"></div>
     ),
     responsive: [
       {
