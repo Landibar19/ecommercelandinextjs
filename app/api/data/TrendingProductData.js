@@ -1,4 +1,4 @@
-import image1 from '../assets/TrendingProducts/image1.png';
+import image1 from '../../../assets/TrendingProducts/image1.png';
 
 export const TrendingProductData = [
     {

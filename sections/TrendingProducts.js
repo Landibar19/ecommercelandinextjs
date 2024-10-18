@@ -1,13 +1,13 @@
 import React from 'react';
-import { TrendingProductData } from '@/data/TrendingProductData';
+import { TrendingProductData } from '../app/api/data/TrendingProductData';
 import Image from 'next/image';
 import '/app/globals.css';
-
-export const TrendingProducts = () => {
+const TrendingProducts = () => {
   return (
-    <div style={{ backgroundColor: 'rgb(241, 240, 255)' }}>
+    <div className='flex justify-evenly items-center flex-col' style={{backgroundColor: 'rgb(241, 240, 255)'}}>
+      <h1 className="text-4xl font-bold m-4 flex items-center justify-center font-serif" style={{color: 'rgb(26, 11, 91)'}}>Trending Products</h1>
       {TrendingProductData.map((product, index) => (
-        <div key={index} className='flex justify-center items-center flex-row m-0 p-0'>
+        <div key={index} className='w-full flex justify-start  items-center flex-col md:flex-row m-0 p-5 md:pl-36'>
           <div className='blob' style={{ backgroundColor: 'rgb(245, 225, 252)', margin: '0 2px' }}>
             <Image src={product.image} alt="Trending Product" width={300} height={300} />
           </div>
