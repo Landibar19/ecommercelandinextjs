@@ -9,7 +9,7 @@ export const Services = () => {
         <h1 className='text-blue-950 text-2xl font-extrabold font-serif'> What Shopex offer</h1>
     </div>
         
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 m-0 pl-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 m-0">
         {ServicesData.map((service, index) => (
           <div key={index} className="border shadow-lg p-4  h-80 flex flex-col justify-center items-center">
             <Image src={service.image} alt={service.title} className="w-24 h-24 object-fit rounded-t-lg p-4" />
