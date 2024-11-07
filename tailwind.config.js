@@ -18,6 +18,7 @@ module.exports = {
       },
       fontFamily: {
         inter: ['Inter', 'sans-serif'],
+        josefin: ['Josefin Sans', 'sans-serif'],
       },
     },
   },

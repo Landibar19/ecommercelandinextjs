@@ -1,4 +1,5 @@
 'use client';
+import { TrendingProducts } from '@/sections/TrendingProducts';
 import dynamic from 'next/dynamic';
 
 
@@ -6,17 +7,17 @@ const FeaturedProducts = dynamic(() => import('@/sections/FeaturedProducts'));
 const LatestProducts = dynamic(() => import('@/sections/LatestProducts'));
 const Promotional = dynamic(() => import('@/sections/Promotional'));
 const Services = dynamic(() => import('@/sections/Services'));
-const TrendingProducts = dynamic(() => import('@/sections/TrendingProducts'));
-
+const UniqueProducts = dynamic(() => import('@/sections/UniqueProducts'));
 export default function Home() {
   return (
     <div>
       <div>
         <Promotional />
         <FeaturedProducts />
-        <Services />
-        <TrendingProducts />
         <LatestProducts />
+        <Services />
+        <UniqueProducts />
+        <TrendingProducts />
       </div>
     </div>
   );
