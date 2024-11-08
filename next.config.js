@@ -1,7 +1,5 @@
-
-  
-  module.exports = ({
-    images: {
-      domains: ['https://ecommercelandinextapp.netlify.app/'],
-    },
-  });
+module.exports = {
+  images: {
+    domains: ['ecommercelandinextapp.netlify.app'],
+  },
+};
