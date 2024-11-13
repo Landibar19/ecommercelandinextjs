@@ -1,8 +1,6 @@
 'use client';
-import TestPage from '@/sections/TestPage';
-import { TrendingProducts } from '@/sections/TrendingProducts';
 import dynamic from 'next/dynamic';
-
+import { TrendingProducts } from '@/sections/TrendingProducts';
 
 const FeaturedProducts = dynamic(() => import('@/sections/FeaturedProducts'));
 const LatestProducts = dynamic(() => import('@/sections/LatestProducts'));
@@ -19,7 +17,7 @@ export default function Home() {
         <Services />
         <UniqueProducts />
         <TrendingProducts />
-        <TestPage />
+   
       </div>
     </div>
   );
