@@ -72,7 +72,7 @@ const FeaturedProducts = () => {
                 onMouseEnter={() => setActiveIndex(index)}
                 onClick={() => setActiveIndex(index)}
               >
-                <Image src={product.image} alt={product.title} className="w-full h-48 object-contain p-3" />
+                <Image src={product.image} alt={product.title} width={500} height={500} className="w-full h-48 object-contain p-3" />
                 <div 
                 className='flex flex-col justify-center items-center p-4 w-full' 
                 style={{backgroundColor: hoveredIndex === index ? 'rgb(26, 11, 91)':  'rgb(242, 240, 248)'}}

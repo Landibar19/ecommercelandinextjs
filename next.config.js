@@ -1,5 +1,11 @@
 module.exports = {
-    images: {
-      domains: ['ecommercelandinextjs.netlify.app'],
-    },
-  };
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'ecommercelandinextjs.netlify.app',
+        pathname: '/**',
+      },
+    ],
+  },
+};
