@@ -88,7 +88,7 @@ const FeaturedProducts = () => {
           ))}
         </Slider>
       ) : (
-        <p>No featured products available.</p>
+        <p>No featured products available!</p>
       )}
     </div>
   );
