@@ -1,4 +1,4 @@
-import image1 from '../../../assets/UniqueProducts/image1.png';
+import image1 from '../../../public/assets/UniqueProducts/image1.png';
 
 export const UniqueProductData = [
     {

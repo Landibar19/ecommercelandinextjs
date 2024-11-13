@@ -1,6 +1,6 @@
-import image1 from  '../../../assets/LatestProducts/image1.png';
-import image2 from  '../../../assets/LatestProducts/image2.png';
-import image3 from  '../../../assets/LatestProducts/image3.png';
+import image1 from  '../../../public/assets/LatestProducts/image1.png';
+import image2 from  '../../../public/assets/LatestProducts/image2.png';
+import image3 from  '../../../public/assets/LatestProducts/image3.png';
 
 
 export const latestProductsData = [

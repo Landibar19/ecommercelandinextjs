@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import React from 'react';
 import '../app/globals.css';
-import image from '../assets/Promotional/image 32.png';
-import chairImage from '../assets/Promotional/Shell-Shaped-Armchair-Pink-Velvet-Fabric-One-Seater-Sofa-for-Living-Room 1.png';
+import image from '../public/assets/Promotional/image 32.png';
+import chairImage from '../public/assets/Promotional/Shell-Shaped-Armchair-Pink-Velvet-Fabric-One-Seater-Sofa-for-Living-Room 1.png';
 
  const Promotional = () => {
   return (

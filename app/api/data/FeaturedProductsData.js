@@ -1,7 +1,7 @@
-import image1 from '../../../assets/FeaturedProducts/image 1.jpg';
-import image2 from '../../../assets/FeaturedProducts/image 2.jpg';
-import image3 from '../../../assets/FeaturedProducts/image 3.jpg';
-import image4 from '../../../assets/FeaturedProducts/image 4.jpg';
+import image1 from '../../../public/assets/FeaturedProducts/image 1.jpg';
+import image2 from '../../../public/assets/FeaturedProducts/image 2.jpg';
+import image3 from '../../../public/assets/FeaturedProducts/image 3.jpg';
+import image4 from '../../../public/assets/FeaturedProducts/image 4.jpg';
 
 
 export const FeaturedProductsData = [

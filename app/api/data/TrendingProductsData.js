@@ -1,12 +1,12 @@
-import image1 from '../../../assets/TrendingProducts/image1.png';
-import image2 from '../../../assets/TrendingProducts/image2.png';
-import image3 from '../../../assets/TrendingProducts/image3.png';
-import image4 from '../../../assets/TrendingProducts/image4.png';
-import image5 from '../../../assets/TrendingProducts/image5.png';
-import image6 from '../../../assets/TrendingProducts/image6.png';
-import image7 from '../../../assets/TrendingProducts/image7.png';
-import image8 from '../../../assets/TrendingProducts/image8.png';
-import image9 from '../../../assets/TrendingProducts/image9.png';
+import image1 from '../../../public/assets/TrendingProducts/image1.png';
+import image2 from '../../../public/assets/TrendingProducts/image2.png';
+import image3 from '../../../public/assets/TrendingProducts/image3.png';
+import image4 from '../../../public/assets/TrendingProducts/image4.png';
+import image5 from '../../../public/assets/TrendingProducts/image5.png';
+import image6 from '../../../public/assets/TrendingProducts/image6.png';
+import image7 from '../../../public/assets/TrendingProducts/image7.png';
+import image8 from '../../../public/assets/TrendingProducts/image8.png';
+import image9 from '../../../public/assets/TrendingProducts/image9.png';
 
 export const TrendingProductsData = [
     {
