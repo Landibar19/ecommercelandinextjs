@@ -1,4 +1,5 @@
 'use client';
+import TestPage from '@/sections/TestPage';
 import { TrendingProducts } from '@/sections/TrendingProducts';
 import dynamic from 'next/dynamic';
 
@@ -18,6 +19,7 @@ export default function Home() {
         <Services />
         <UniqueProducts />
         <TrendingProducts />
+        <TestPage />
       </div>
     </div>
   );
