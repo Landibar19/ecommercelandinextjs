@@ -2,6 +2,7 @@
 import dynamic from 'next/dynamic';
 import { TrendingProducts } from '@/sections/TrendingProducts';
 import {DiscountItem} from '@/sections/DiscountItem';
+import {TopCategories} from '@/sections/TopCategories';
 
 const FeaturedProducts = dynamic(() => import('@/sections/FeaturedProducts'));
 const LatestProducts = dynamic(() => import('@/sections/LatestProducts'));
@@ -19,7 +20,7 @@ export default function Home() {
         <UniqueProducts />
         <TrendingProducts />
         <DiscountItem />
-   
+        <TopCategories />
       </div>
     </div>
   );

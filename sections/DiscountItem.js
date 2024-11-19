@@ -32,8 +32,8 @@ export const DiscountItem = () => {
             <div className=" md:w-2/3">
               <h1 className="font-bold font-josefin text-blue-900 text-xl py-3">20% Discount of All Products</h1>
               <h4 className="text-pink-700 font-josefin">{selectedProduct.type}</h4>
-              <p className="mt-2 text-sm text-gray-500">{selectedProduct.description}</p>
-              <div className="grid grid-cols-2 gap-2">
+              <p className="mt-2 text-sm text-gray-500 md:w-2/3">{selectedProduct.description}</p>
+              <div className="grid"  style={{ display: 'grid', gridTemplateColumns: '0.5fr 1fr', gap: '4px', marginTop:'16px' }}>
                 {selectedProduct.properties.map((prop, index) => (
                   <div key={index} className="flex items-center p-2 text-sm text-gray-500">
                     <span className="mr-1">✓</span>
@@ -41,6 +41,7 @@ export const DiscountItem = () => {
                   </div>
                 ))}
               </div>
+              <button className='text-sm cursor-pointer bg-pink-500 border text-white mt-4 px-6 py-2'>Shop now</button>
             </div>
             <div className="lg:w-1/3">
               <Image 

@@ -1,6 +1,7 @@
 import { Inter } from 'next/font/google';
 import  Nav  from "@/components/Nav/nav";
 import Header from "@/components/Header/header";
+import Footer from '@/components/Footer/Footer';
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -25,6 +26,7 @@ href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700
         <main>
           {children}
         </main>
+        <Footer />
       </body>
     </html>
   );
